@@ -77,11 +77,60 @@
         <i class="fas fa-bars open-nav"></i>
         <ul class="menu">
           
+                  
+                  <li><a href="/">首页</a></li>
+                  
+              
+                  
+                  <li>
+                      <a class="menu-child-hover" href="javascript:void(0);">找文章</a>
+                      <ul class="menu-child">
+                      
+                          <li><a href='/tags'>标签</a></li>
+                      
+                          <li><a href='/categories'>分类</a></li>
+                      
+                          <li><a href='/archives'>归档</a></li>
+                      
+                      </ul>
+                  </li>
+                  
+              
+                  
+                  <li><a href="/link">友情链接</a></li>
+                  
+              
+                  
+                  <li><a href="/about">关于我</a></li>
+                  
+              
         </ul>
     </div>
 </nav>
 <div id="mobile-nav">
     <ul>
+    
+        
+        <li><a href="/">首页</a></li>
+        
+    
+        
+        
+            <li><a href='/tags'>标签</a></li>
+        
+            <li><a href='/categories'>分类</a></li>
+        
+            <li><a href='/archives'>归档</a></li>
+        
+        
+    
+        
+        <li><a href="/link">友情链接</a></li>
+        
+    
+        
+        <li><a href="/about">关于我</a></li>
+        
     
     </ul>
 </div>
@@ -150,7 +199,7 @@
         <a href="https://github.com/lete114/hexo-theme-MengD" target="_blank">MengD.(萌典) </a>
     </div>
     
-    <div class="custom-text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div>
+    <div class="custom-text">生而为人，我很荣幸。人生短暂，且行且珍惜。</div>
 </footer>
     </div>
     <div id="mask" onclick="closeAll()"></div>
@@ -168,23 +217,6 @@
     <div class="script">
         <script src="/js/main.js"></script>
         
-
- 
-<script>
-    var originTitle = document.title;
-    var titleTime;
-    document.addEventListener("visibilitychange", function () {
-        if (document.hidden) {
-            document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-            clearTimeout(titleTime);
-        } else {
-            document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-            titleTime = setTimeout(function () {
-                document.title = originTitle;
-            }, 2000);
-        }
-    });
-</script>
 
 
 <script src="/js/lazyload.js"></script>
