@@ -8,18 +8,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<title>闲人自述</title>
+<title>about | 闲人自述</title>
 <link href="/img/favicon.png" rel="shortcut icon">
 <meta name="author" content="子涵 ">
 <meta name="copyright" content="子涵">
 <meta name="keywords" content="">
-<meta name="description" content="" />
+<meta name="description" content="关于我我呢是子涵                              " />
 <meta property="site_name" content="闲人自述 " />
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.hxcpl.cn/index.html">
-<meta property="og:title" content="闲人自述" />
+<meta property="og:url" content="https://blog.hxcpl.cn/about/index.html">
+<meta property="og:title" content="about | 闲人自述" />
 <meta property="og:site_name" content="闲人自述" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="关于我我呢是子涵                              " />
 <meta property="og:locale" content="zh-CN">
 <meta property="article:author" content="子涵 ">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -137,80 +137,57 @@
         <div id="main-wrap">
                 <main class="main">
                      
-                    
-<header>
-    <div class="header-author">
-        <a href="/" class="author">
-            <img src="/img/logo.png" alt="子涵" class="author-avatar">
-            <div class="author-name">
-                子涵
-            </div>
-        </a>
-    </div>
-    <div class="header-description">
-        <p>
-            别说我不行，前面的路很精彩，你能行！
-        </p>
-        <div class="header-icon">
-            
-                <a target="_blank" rel="noopener" href="https://github.com/YWHSYXC"><i class="fab fa-github"></i></a>
-            
-                <a target="_blank" rel="noopener" href="https://space.bilibili.com/40026494"><i class="fas fa-play-circle"></i></a>
-            
-                <a target="_blank" rel="noopener" href="http://www.coolapk.com/u/3966924"><i class="fas fa-dot-circle"></i></a>
-            
-        </div>
-    </div>
-</header>
-<div id="post-list">
-     
-    
-        <div class="post-item">
-             
-            <a class="post-title" href="/article/4a17b156.html" title="Hello World ">
-                Hello World
-            </a>
-            <div class="post-description">
-                 
-                Hello World你好世界这是Hexo的第一篇...
-            </div>
-            <div class="post-meta-wrap">
-                <span class="post-meta-date">
-                    <i class="far fa-calendar-alt"></i>
-                    <span>发表于  </span>
-                    <span>
-                        2021-10-04
-                    </span>
-                </span>
-                
-                <span class="post-categorie">
-                    <i class="fas fa-folder-open"></i>
-                    
-                        <a href="/categories/%E6%9D%82%E9%A1%B9/">
-                            杂项aa
-                        </a>
-                        
-                    
-                </span>
-                
+                     
 
-                
-                    <span class="post-tag">
-                    <i class="fa fa-tag"></i>
-                    
-                    <a href="/tags/test/">
-                        test
-                    </a>
-                    
-                    
-                </span>
-                
-            </div>
+ 
+
+
+     
+    <div class="page-title">
+        about
+    </div>
+    <div class="content"><p>关于我<br>我呢是子涵                              </p>
+</div>
+
+
+
+    <div class="comment-head" id="直达评论">
+        <hr>
+        <div class="comment-headline">
+            <i class="fas fa-comments fa-fw"></i>
+            <span>评论</span>
         </div>
         
-         
-
-</div>
+            
+<div id="wcomments"></div>
+<script>
+function LoadWaline() {
+    getScript("//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js",function(){
+        let initData = {
+            el: '#wcomments',
+            path: location.pathname,
+            serverURL: 'https://waline.vercel.app/',
+            placeholder: '说点什么吧...',
+            avatar: '',
+            meta: 'nick,mail,link'.split(","),
+            requiredFields: 'nick,mail,link'.split(","),
+            pageSize: 5,
+            lang: 'zh-CN',
+            emojiCDN: '',
+            emojiMaps: null,
+            visitor: true
+        }
+        var option = false;
+        if (option) {
+            initData = Object.assign(initData, option)
+        }
+        new Waline(initData)
+    })
+}
+LoadWaline()
+</script>
+        
+    </div>
 
                 </main>
         </div>
@@ -228,6 +205,11 @@
             <i class="fas fa-moon"></i>
         </a>
          
+        
+        
+            <a href="#直达评论" title="直达评论">
+                <i class="fas fa-comments"></i>
+            </a>
         
         <a href="#" title="回到顶部">
             <i class="fas fa-arrow-up"></i>
