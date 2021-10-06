@@ -8,18 +8,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<title>Typecho稳定版升级开发版记录 | 闲人自述</title>
+<title>针对Single主题的部分改动 | 闲人自述</title>
 <link href="/img/favicon.png" rel="shortcut icon">
 <meta name="author" content="子涵 ">
 <meta name="copyright" content="子涵">
 <meta name="keywords" content="Typecho">
-<meta name="description" content="Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。升级目的typecho稳定版对markdown的支持有点拉跨，部分语法无法正常食用，混用html的语法又显得麻烦，我这个人是炒鸡懒的。升级过程首先在Typecho的github上获取最近更新的文件。然后对博客的数据进行备份，防止意外。接着删除网站后台:【admin(我修改成了zihan)、var、index.php】如图:删除完成后，我们再把刚刚从github下载的开发版，对应文件：admin、var、index.php上传即可。上传完成后，我们进入博客的后台，" />
+<meta name="description" content="针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。1-正文部分single.css 33文章字体正常化。1font-weight: 400;single.css 32文章字体加粗。1color: #1f1f1f;kico.css 235加大点红字比例。1font-size: 100%;kico.css 90玻璃框宽度大点。1wrap.min&#123; max-width: 850px &#125;kico.css 280引用字体不斜体。1font-style: oblique;post.php删除一条带blockq" />
 <meta property="site_name" content="闲人自述 " />
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html">
-<meta property="og:title" content="Typecho稳定版升级开发版记录 | 闲人自述" />
+<meta property="og:url" content="https://blog.hxcpl.cn/p/anti-Single-Themes-revise.html">
+<meta property="og:title" content="针对Single主题的部分改动 | 闲人自述" />
 <meta property="og:site_name" content="闲人自述" />
-<meta property="og:description" content="Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。升级目的typecho稳定版对markdown的支持有点拉跨，部分语法无法正常食用，混用html的语法又显得麻烦，我这个人是炒鸡懒的。升级过程首先在Typecho的github上获取最近更新的文件。然后对博客的数据进行备份，防止意外。接着删除网站后台:【admin(我修改成了zihan)、var、index.php】如图:删除完成后，我们再把刚刚从github下载的开发版，对应文件：admin、var、index.php上传即可。上传完成后，我们进入博客的后台，" />
+<meta property="og:description" content="针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。1-正文部分single.css 33文章字体正常化。1font-weight: 400;single.css 32文章字体加粗。1color: #1f1f1f;kico.css 235加大点红字比例。1font-size: 100%;kico.css 90玻璃框宽度大点。1wrap.min&amp;#123; max-width: 850px &amp;#125;kico.css 280引用字体不斜体。1font-style: oblique;post.php删除一条带blockq" />
 <meta property="og:locale" content="zh-CN">
 <meta property="article:author" content="子涵 ">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -134,14 +134,14 @@
 <article class="post">
   <div class="post-info">
     <div class="post-title">
-      <h1>Typecho稳定版升级开发版记录</h1>
+      <h1>针对Single主题的部分改动</h1>
     </div>
     <div class="post-meta">
       <div class="post-date">
         <i class="far fa-calendar-alt fa-fw post-meta-icon"></i>
         <span class="post-meta-label">
           发表于
-            2021-08-28 |
+            2021-09-04 |
         </span>
         
         <i class="fas fa-history fa-fw post-meta-icon"></i>
@@ -153,13 +153,13 @@
       <div class="post-meta-wordcount">
         <i class="far fa-file-word fa-fw post-meta-icon"></i>
         <span class="post-meta-label">总字数:</span>
-        <span class="word-count">263 | </span>
+        <span class="word-count">323 | </span>
         <i class="far fa-clock fa-fw post-meta-icon"></i>
         <span class="post-meta-label">阅读时长:</span>
         <span>1分钟</span>
         
         | <i class="far fa-eye fa-fw post-meta-icon"></i>
-        <span id="/p/Typecho-stable-bate-Version.html" class="leancloud_visitors">
+        <span id="/p/anti-Single-Themes-revise.html" class="leancloud_visitors">
             <span class="post-meta-label">阅读量:</span>
             <span class="leancloud-visitors-count" id="twikoo_visitors">0</span>
         </span>
@@ -169,25 +169,40 @@
   </div>
   <div class="post-content">
     <blockquote>
-<p>Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。</p>
+<p>针对保罗的single主题，个人使用的一些小小改动。<br>这里借鉴了<a target="_blank" rel="noopener" href="https://rzfyu.com/264.html" title="汝者非鱼">汝者非鱼</a>的部分改动方案。</p>
 </blockquote>
-<h1 id="升级目的"><a href="#升级目的" class="headerlink" title="升级目的"></a>升级目的</h1><p>typecho稳定版对markdown的支持有点拉跨，部分语法无法正常食用，混用html的语法又显得麻烦，我这个人是炒鸡懒的。</p>
-<h1 id="升级过程"><a href="#升级过程" class="headerlink" title="升级过程"></a>升级过程</h1><ul>
-<li>首先在Typecho的github上获取最近更新的文件。</li>
-<li>然后对博客的数据进行备份，防止意外。</li>
-<li>接着删除网站后台:【admin(我修改成了zihan)、var、index.php】如图:</li>
-</ul>
-<p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/typecho%E5%8D%87%E7%BA%A7%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6.png" alt="我的后台文件"></p>
-<ul>
-<li>删除完成后，我们再把刚刚从github下载的开发版，对应文件：admin、var、index.php上传即可。</li>
-<li>上传完成后，我们进入博客的后台，看到如图界面:</li>
-</ul>
-<p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/%E6%9B%B4%E6%96%B0typecho%E5%BC%80%E5%8F%91%E7%89%88.png" alt="升级成功"></p>
-<ul>
-<li>便是成功了！</li>
-</ul>
-<h1 id="开发版的体验"><a href="#开发版的体验" class="headerlink" title="开发版的体验"></a>开发版的体验</h1><p>升级成功后，再次食用markdown语法，之前不能显示的语法，就可以正常食用了。<br>感觉还是蛮香的。</p>
-<p>好了以上便是本次的全部内容了，感谢各位看客！</p>
+<h1 id="1-正文部分"><a href="#1-正文部分" class="headerlink" title="1-正文部分"></a>1-正文部分</h1><p><em>single.css 33</em></p>文章字体正常化。
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-weight: 400;</span><br></pre></td></tr></table></figure>
+<p><em>single.css 32</em></p>文章字体加粗。
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color: #1f1f1f;</span><br></pre></td></tr></table></figure>
+<p><em>kico.css 235</em></p>加大点红字比例。
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-size: 100%;</span><br></pre></td></tr></table></figure>
+
+<p><em>kico.css 90</em></p>玻璃框宽度大点。
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wrap.min&#123; max-width: 850px &#125;</span><br></pre></td></tr></table></figure>
+
+<p><em>kico.css 280</em></p>引用字体不斜体。
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-style: oblique;</span><br></pre></td></tr></table></figure>
+
+<p><em>post.php</em></p>删除一条带blockquote的代码（即下面这个），表示删掉“修改于 n 天前”的功能。
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php if(time() - $this -&gt; modified &gt;= 15552000): ?&gt;</span><br><span class="line">            &lt;blockquote&gt;这篇文章上次修改于 &lt;?php echo ceil((time() - $this -&gt; modified) / 86400) ?&gt; 天前，可能其部分内容已经发生变化，如有疑问可询问作者。&lt;/blockquote&gt;</span><br><span class="line">&lt;?php endif ?&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-字号功能"><a href="#2-字号功能" class="headerlink" title="2-字号功能"></a>2-字号功能</h1><p><b>·第一步:</b></p>
+把下面的代码放入footer.php里。我放置的位置在55行
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function FontZoom(fsize)&#123;</span><br><span class="line">    var ctext=document.getElementById(&quot;arctext&quot;);</span><br><span class="line">    ctext.style.fontSize=fsize +&quot;px&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p><b>·第二步:</b></P>
+
+<p>…<br>因为代码块的原因，只能暂时终止后续步骤，等过几天研究一下再看。</p>
+<p>不用研究了emmmm，已经转Hexo，真遗憾！</p>
+<p>所以想做就去做吧，别找借口，再想做时可能就晚了。</p>
 
   </div>
    
@@ -205,14 +220,14 @@
       <div class="post-copyright-type">
           <span class="post-copyright-meta">文章链接: </span>
             <span class="post-copyright-info">
-              <a href="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html" >https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html</a>
+              <a href="https://blog.hxcpl.cn/p/anti-Single-Themes-revise.html" >https://blog.hxcpl.cn/p/anti-Single-Themes-revise.html</a>
             </span>
       </div><div class="post-copyright-notice">
           <span class="post-copyright-meta">版权声明: </span>
             <span class="post-copyright-info">本博客采用
               <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " target="_blank" >
                   CC BY-NC-SA 4.0 </a> 许可协议。没有特别申明，都是本人智慧，借鉴请注明来自
-              <a href="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html" target="_blank" >闲人自述</a>
+              <a href="https://blog.hxcpl.cn/p/anti-Single-Themes-revise.html" target="_blank" >闲人自述</a>
               ！</span>
       </div>
   </div>
@@ -226,17 +241,20 @@
 
 <div class="pagination-post">
     
-    <a href="/p/anti-Single-Themes-revise.html">
-      <div class="prev-title"><i class="fas fa-chevron-left"></i>针对Single主题的部分改动</div>
-      <div class="prev-desc">
-针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。
-
-1-正文部分single.css 33文章字体正常化。
-
-1font-weight: 400;
-sin...</div>
+    <a href="/p/Hello-World.html">
+      <div class="prev-title"><i class="fas fa-chevron-left"></i>Hello World</div>
+      <div class="prev-desc">Hello World！你好世界！开篇献出这是我在Hexo上的第一篇。
+换博客程序的原因本来是用着Typecho来着，但是因为明年3月轻量云要过期了，我也迫切的需要服务器做udp转发，结合后期的...</div>
     </a>
     
+    
+    <a href="/p/Typecho-stable-bate-Version.html">
+      <div class="next-title">Typecho稳定版升级开发版记录<i class="fas fa-chevron-right"></i></div>
+      <div class="next-desc">
+Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。
+
+升级目的typecho稳定版对markdown的支持有点拉跨，部分语法无法正常...</div>
+    </a>
     
 </div>
 </article>
@@ -291,7 +309,7 @@ LoadWaline()
       <progress class="progress" value="0" max="100"></progress>
     </div>
     <div class="toc-list">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E7%9B%AE%E7%9A%84"><span class="toc-text">升级目的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E8%BF%87%E7%A8%8B"><span class="toc-text">升级过程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E7%89%88%E7%9A%84%E4%BD%93%E9%AA%8C"><span class="toc-text">开发版的体验</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%AD%A3%E6%96%87%E9%83%A8%E5%88%86"><span class="toc-text">1-正文部分</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%AD%97%E5%8F%B7%E5%8A%9F%E8%83%BD"><span class="toc-text">2-字号功能</span></a></li></ol>
     </div>
   </div>
 
