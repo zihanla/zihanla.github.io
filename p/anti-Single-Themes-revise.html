@@ -13,13 +13,13 @@
 <meta name="author" content="子涵 ">
 <meta name="copyright" content="子涵">
 <meta name="keywords" content="Typecho">
-<meta name="description" content="针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。1-正文部分single.css 33文章字体正常化。1font-weight: 400;single.css 32文章字体加粗。1color: #1f1f1f;kico.css 235加大点红字比例。1font-size: 100%;kico.css 90玻璃框宽度大点。1wrap.min&#123; max-width: 850px &#125;kico.css 280引用字体不斜体。1font-style: oblique;post.php删除一条带blockq" />
+<meta name="description" content="针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。1-正文部分针对正文single.css 33文章字体正常化。1font-weight: 400;single.css 32文章字体加粗。1color: #1f1f1f;kico.css 235加大点红字比例。1font-size: 100%;kico.css 90玻璃框宽度大点。1wrap.min&#123; max-width: 850px &#125;kico.css 280引用字体不斜体。1font-style: oblique;post.php删除一条带" />
 <meta property="site_name" content="闲人自述 " />
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://blog.hxcpl.cn/p/anti-Single-Themes-revise.html">
 <meta property="og:title" content="针对Single主题的部分改动 | 闲人自述" />
 <meta property="og:site_name" content="闲人自述" />
-<meta property="og:description" content="针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。1-正文部分single.css 33文章字体正常化。1font-weight: 400;single.css 32文章字体加粗。1color: #1f1f1f;kico.css 235加大点红字比例。1font-size: 100%;kico.css 90玻璃框宽度大点。1wrap.min&amp;#123; max-width: 850px &amp;#125;kico.css 280引用字体不斜体。1font-style: oblique;post.php删除一条带blockq" />
+<meta property="og:description" content="针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。1-正文部分针对正文single.css 33文章字体正常化。1font-weight: 400;single.css 32文章字体加粗。1color: #1f1f1f;kico.css 235加大点红字比例。1font-size: 100%;kico.css 90玻璃框宽度大点。1wrap.min&amp;#123; max-width: 850px &amp;#125;kico.css 280引用字体不斜体。1font-style: oblique;post.php删除一条带" />
 <meta property="og:locale" content="zh-CN">
 <meta property="article:author" content="子涵 ">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -153,7 +153,7 @@
       <div class="post-meta-wordcount">
         <i class="far fa-file-word fa-fw post-meta-icon"></i>
         <span class="post-meta-label">总字数:</span>
-        <span class="word-count">323 | </span>
+        <span class="word-count">328 | </span>
         <i class="far fa-clock fa-fw post-meta-icon"></i>
         <span class="post-meta-label">阅读时长:</span>
         <span>1分钟</span>
@@ -171,7 +171,9 @@
     <blockquote>
 <p>针对保罗的single主题，个人使用的一些小小改动。<br>这里借鉴了<a target="_blank" rel="noopener" href="https://rzfyu.com/264.html" title="汝者非鱼">汝者非鱼</a>的部分改动方案。</p>
 </blockquote>
-<h1 id="1-正文部分"><a href="#1-正文部分" class="headerlink" title="1-正文部分"></a>1-正文部分</h1><p><em>single.css 33</em></p>文章字体正常化。
+<h1 id="1-正文部分"><a href="#1-正文部分" class="headerlink" title="1-正文部分"></a>1-正文部分</h1><details>
+<summary><b>针对正文</b></summary>
+<p><em>single.css 33</em></p>文章字体正常化。
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-weight: 400;</span><br></pre></td></tr></table></figure>
 <p><em>single.css 32</em></p>文章字体加粗。
@@ -192,14 +194,16 @@
 <p><em>post.php</em></p>删除一条带blockquote的代码（即下面这个），表示删掉“修改于 n 天前”的功能。
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php if(time() - $this -&gt; modified &gt;= 15552000): ?&gt;</span><br><span class="line">            &lt;blockquote&gt;这篇文章上次修改于 &lt;?php echo ceil((time() - $this -&gt; modified) / 86400) ?&gt; 天前，可能其部分内容已经发生变化，如有疑问可询问作者。&lt;/blockquote&gt;</span><br><span class="line">&lt;?php endif ?&gt;</span><br></pre></td></tr></table></figure>
+</details>
 
-<h1 id="2-字号功能"><a href="#2-字号功能" class="headerlink" title="2-字号功能"></a>2-字号功能</h1><p><b>·第一步:</b></p>
+<h1 id="2-字号功能"><a href="#2-字号功能" class="headerlink" title="2-字号功能"></a>2-字号功能</h1><details>
+<summary>针对字号</summary>
 把下面的代码放入footer.php里。我放置的位置在55行
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function FontZoom(fsize)&#123;</span><br><span class="line">    var ctext=document.getElementById(&quot;arctext&quot;);</span><br><span class="line">    ctext.style.fontSize=fsize +&quot;px&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</details>
 
-<p><b>·第二步:</b></P>
-
+<p><b>第二步</b>:</p>
 <p>…<br>因为代码块的原因，只能暂时终止后续步骤，等过几天研究一下再看。</p>
 <p>不用研究了emmmm，已经转Hexo，真遗憾！</p>
 <p>所以想做就去做吧，别找借口，再想做时可能就晚了。</p>
