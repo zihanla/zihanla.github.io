@@ -8,18 +8,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<title>Typecho稳定版升级开发版记录 | 闲人自述</title>
+<title>萌典主题配置Waline评论 | 闲人自述</title>
 <link href="/img/favicon.png" rel="shortcut icon">
 <meta name="author" content="子涵 ">
 <meta name="copyright" content="子涵">
-<meta name="keywords" content="Typecho">
-<meta name="description" content="Typecho开发版对markdown语法更加兼容" />
+<meta name="keywords" content="Hexo">
+<meta name="description" content="关于Waline部署的一些注意点" />
 <meta property="site_name" content="闲人自述 " />
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html">
-<meta property="og:title" content="Typecho稳定版升级开发版记录 | 闲人自述" />
+<meta property="og:url" content="https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html">
+<meta property="og:title" content="萌典主题配置Waline评论 | 闲人自述" />
 <meta property="og:site_name" content="闲人自述" />
-<meta property="og:description" content="Typecho开发版对markdown语法更加兼容" />
+<meta property="og:description" content="关于Waline部署的一些注意点" />
 <meta property="og:locale" content="zh-CN">
 <meta property="article:author" content="子涵 ">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -134,14 +134,14 @@
 <article class="post">
   <div class="post-info">
     <div class="post-title">
-      <h1>Typecho稳定版升级开发版记录</h1>
+      <h1>萌典主题配置Waline评论</h1>
     </div>
     <div class="post-meta">
       <div class="post-date">
         <i class="far fa-calendar-alt fa-fw post-meta-icon"></i>
         <span class="post-meta-label">
           发表于
-            2021-08-28 |
+            2021-10-07 |
         </span>
         
         <i class="fas fa-history fa-fw post-meta-icon"></i>
@@ -153,13 +153,13 @@
       <div class="post-meta-wordcount">
         <i class="far fa-file-word fa-fw post-meta-icon"></i>
         <span class="post-meta-label">总字数:</span>
-        <span class="word-count">263 | </span>
+        <span class="word-count">883 | </span>
         <i class="far fa-clock fa-fw post-meta-icon"></i>
         <span class="post-meta-label">阅读时长:</span>
-        <span>1分钟</span>
+        <span>3分钟</span>
         
         | <i class="far fa-eye fa-fw post-meta-icon"></i>
-        <span id="/p/Typecho-stable-bate-Version.html" class="leancloud_visitors">
+        <span id="/p/MengD-Themes-Deploy-Waline-Comment.html" class="leancloud_visitors">
             <span class="post-meta-label">阅读量:</span>
             <span class="leancloud-visitors-count" id="twikoo_visitors">0</span>
         </span>
@@ -169,25 +169,65 @@
   </div>
   <div class="post-content">
     <blockquote>
-<p>Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。</p>
+<p>众所周知</p>
+<blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>简而言之,它生成的都是静态页面，想要插入评论什么的需要借助一套完整的评论系统。</p>
+<blockquote>
+<p>而我用的主题:<a target="_blank" rel="noopener" href="https://github.com/lete114/hexo-theme-MengD">MengD-萌典</a>默认的评论系统就是Waline评论系统。</p>
 </blockquote>
-<h1 id="升级目的"><a href="#升级目的" class="headerlink" title="升级目的"></a>升级目的</h1><p>typecho稳定版对markdown的支持有点拉跨，部分语法无法正常食用，混用html的语法又显得麻烦，我这个人是炒鸡懒的。</p>
-<h1 id="升级过程"><a href="#升级过程" class="headerlink" title="升级过程"></a>升级过程</h1><ul>
-<li>首先在Typecho的github上获取最近更新的文件。</li>
-<li>然后对博客的数据进行备份，防止意外。</li>
-<li>接着删除网站后台:【admin(我修改成了zihan)、var、index.php】如图:</li>
+</blockquote>
+</blockquote>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://console.leancloud.app/">LeanCloud国际版</a>(数据库)</li>
+<li><a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a>(服务端)</li>
+<li>打开萌典主题配置文件<b>_config.MengD.yml</b>搜索Waline，大概在120行左右</b> </li>
 </ul>
-<p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/typecho%E5%8D%87%E7%BA%A7%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6.png" alt="我的后台文件"></p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><blockquote>
+<p>其实<a target="_blank" rel="noopener" href="https://waline.js.org/">Waline使用文档</a>是非常详细的跟着走就行了。<br>好了Waline评论系统配置教程<b>到此结束!</b>。</p>
+</blockquote>
+<p>哈哈说的其实也是实话，跟着文档走绝对没问题，我仅提几个注意事项:</p>
 <ul>
-<li>删除完成后，我们再把刚刚从github下载的开发版，对应文件：admin、var、index.php上传即可。</li>
-<li>上传完成后，我们进入博客的后台，看到如图界面:</li>
+<li><p><b>直接</b>点击开发文档中的<a target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example">Deploy</a>跳转至vercel进行部署就行了。<b>不要</b>去他的github上Fork了再添加项目，因为在官方提供的跳转链接直接给你引导到了部署界面，Vercel会帮你生成一个关于Waline的服务端文件到你的Github仓库。</p>
+</li>
+<li><p>在Vercel中配置环境变量时要注意文档提示</p>
+</li>
 </ul>
-<p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/%E6%9B%B4%E6%96%B0typecho%E5%BC%80%E5%8F%91%E7%89%88.png" alt="升级成功"></p>
+<blockquote>
+<p>“点击顶部的 Settings - Environment Variables 进入环境变量配置页，并配置三个环境变量LEAN_ID, LEAN_KEY 和 LEAN_MASTER_KEY 。它们的值分别对应上一步在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。”</p>
+</blockquote>
+<p>其实文档说的有些不清不楚，如图:<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/Vercel%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png">Vercel添加环境变量</a></p>
+<blockquote>
+<p>我当时就特别懵逼，明明只有2个地方需要填，可是我有”APP ID, APP KEY, Master Key”,三个值啊！这里当时浪费了我特别多时间，我以为是Waline的文档教程已经老了。</p>
+</blockquote>
+<p>仔细去看了文档的图片和文字才理解过来，原来它需要我们添加3个环境变量。<br>eg：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NAME: LEAN_ID</span><br><span class="line">VALUE: 2SrSGxxxq5xxxxx-MdxxxxxMMI</span><br></pre></td></tr></table></figure>
+<p>剩下两个以此类推即可。<br>说到底还是我<b>肾虚眼花</b>，错过了一些字眼。</p>
 <ul>
-<li>便是成功了！</li>
+<li><p>配置好环境变量,需要再去部署一遍，这样环境变量才能生效</p>
+</li>
+<li><p>剩下就是需要去萌典主题设置里，把serverURL(服务端地址):改成Vercel给你生存的地址。</p>
+</li>
 </ul>
-<h1 id="开发版的体验"><a href="#开发版的体验" class="headerlink" title="开发版的体验"></a>开发版的体验</h1><p>升级成功后，再次食用markdown语法，之前不能显示的语法，就可以正常食用了。<br>感觉还是蛮香的。</p>
-<p>好了以上便是本次的全部内容了，感谢各位看客！</p>
+<p>到这里就真的结束了,因为我的Vercel今天早上出了点问题，不抓取我仓库的更新，导致我一度以为是LeTe乐特的主题问题，没能与Vercel服务端连接，真心尴尬哈，浪费了好长时间。</p>
+<h3 id="Waline评论系统展示图"><a href="#Waline评论系统展示图" class="headerlink" title="Waline评论系统展示图"></a>Waline评论系统展示图</h3><details>
+<summary><b>点击我打开折叠</b></summary>
+
+<p>被单独拿出来的Waline界评论界面:<br><a href="htttps://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/waline评论主界面.png">Waline评论界面</a></p>
+<p>Waline评论管理登录界面:<br><a href="htttps://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/Waline评论用户注册界面.png">Waline评论管理登录注册界面</a></p>
+<p>Waline评论管理界面:<br><a href="htttps://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/Waline评论管理界面.png">Waline评论管理界面</a></p>
+</details>
+
+<h4 id="评论管理-管理端"><a href="#评论管理-管理端" class="headerlink" title="评论管理 (管理端)"></a>评论管理 (管理端)</h4><ul>
+<li><p>部署完成后，请访问 <serverURL>/ui/register 进行注册。首个注册的人会被设定成管理员。</p>
+</li>
+<li><p>管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。</p>
+</li>
+<li><p>用户也通过评论框注册账号，登陆后会跳转到自己的档案页。</p>
+</li>
+</ul>
+<h5 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h5><p>其实这篇文章仅是我觉得一些需要提及的地方，我不打算用Waline评论系统，因为在我用上Waline</p>
+<p>的同时又看见了twikoo，它对头像的优化更加好，可以直接调用QQ头像，我觉得挺不错，所以还是</p>
+<p>写篇文章怀念一下Waline评论系统。</p>
 
   </div>
    
@@ -205,14 +245,14 @@
       <div class="post-copyright-type">
           <span class="post-copyright-meta">文章链接: </span>
             <span class="post-copyright-info">
-              <a href="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html" >https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html</a>
+              <a href="https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html" >https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html</a>
             </span>
       </div><div class="post-copyright-notice">
           <span class="post-copyright-meta">版权声明: </span>
             <span class="post-copyright-info">本博客采用
               <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " target="_blank" >
                   CC BY-NC-SA 4.0 </a> 许可协议。没有特别申明，都是本人智慧，借鉴请注明来自
-              <a href="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html" target="_blank" >闲人自述</a>
+              <a href="https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html" target="_blank" >闲人自述</a>
               ！</span>
       </div>
   </div>
@@ -226,21 +266,12 @@
 
 <div class="pagination-post">
     
-    <a href="/p/anti-Single-Themes-revise.html">
-      <div class="prev-title"><i class="fas fa-chevron-left"></i>针对Single主题的部分改动</div>
-      <div class="prev-desc">
-针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。  
-
-1-正文部分
-用做分割线
-
-
-点击我打开折叠
-
-single.css 33文章字体正常化。
-1fo...</div>
-    </a>
     
+    <a href="/p/Hello-World.html">
+      <div class="next-title">Hello World<i class="fas fa-chevron-right"></i></div>
+      <div class="next-desc">Hello World！你好世界！开篇献出这是我在Hexo上的第一篇。
+换博客程序的原因本来是用着Typecho来着，但是因为明年3月轻量云要过期了，我也迫切的需要服务器做udp转发，结合后期的...</div>
+    </a>
     
 </div>
 </article>
@@ -295,7 +326,7 @@ LoadWaline()
       <progress class="progress" value="0" max="100"></progress>
     </div>
     <div class="toc-list">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E7%9B%AE%E7%9A%84"><span class="toc-text">升级目的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E8%BF%87%E7%A8%8B"><span class="toc-text">升级过程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E7%89%88%E7%9A%84%E4%BD%93%E9%AA%8C"><span class="toc-text">开发版的体验</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Waline%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E5%B1%95%E7%A4%BA%E5%9B%BE"><span class="toc-text">Waline评论系统展示图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%AE%A1%E7%90%86-%E7%AE%A1%E7%90%86%E7%AB%AF"><span class="toc-text">评论管理 (管理端)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-text">结论</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
     </div>
   </div>
 
