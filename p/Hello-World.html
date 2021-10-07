@@ -238,32 +238,24 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
         </div>
         
             
-<div id="wcomments"></div>
+<div id="tcomment"></div>
 <script>
-function LoadWaline() {
-    getScript("//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js",function(){
-        let initData = {
-            el: '#wcomments',
-            path: location.pathname,
-            serverURL: 'https://hxcpl-waline.vercel.app/',
-            placeholder: '说点什么吧...',
-            avatar: '',
-            meta: 'nick,mail,link'.split(","),
-            requiredFields: 'nick,mail,link'.split(","),
-            pageSize: 5,
-            lang: 'zh-CN',
-            emojiCDN: '',
-            emojiMaps: null,
-            visitor: true
-        }
-        var option = false;
-        if (option) {
-            initData = Object.assign(initData, option)
-        }
-        new Waline(initData)
-    })
+function LoadTwikoo(){
+  getScript("https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js",function(){
+    initData = {
+      el: '#tcomment',
+      envId: 'https://hxcpl-twikoo.vercel.app/',
+      region: 'ap-shanghai',
+      path: 'window.location.pathname',
+  }
+  var option = false;
+  if(option){
+      initData = Object.assign(initData, option)
+  }
+  twikoo.init(initData);
+  })
 }
-LoadWaline()
+LoadTwikoo()
 </script>
         
     </div>
