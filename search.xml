@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/p/Hello-World.html"/>
+      <url>/p/Hello-World.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Hello-World！"><a href="#Hello-World！" class="headerlink" title="Hello World！"></a>Hello World！</h2><h3 id="你好世界！"><a href="#你好世界！" class="headerlink" title="你好世界！"></a>你好世界！</h3><p>开篇献出这是我在Hexo上的第一篇。</p><h2 id="换博客程序的原因"><a href="#换博客程序的原因" class="headerlink" title="换博客程序的原因"></a>换博客程序的原因</h2><p>本来是用着Typecho来着，但是因为明年3月轻量云要过期了，我也迫切的需要服务器做udp转发，结合后期的续费成本，和我做博客的需求，我觉得过多的投入金钱，对我是划不来，毕竟我做博客，一是为了记录笔记，二是为了自由空间吐吐槽，转到Hexo纯属无奈，兜里没钱，那只好折腾。</p><h2 id="接下来的打算"><a href="#接下来的打算" class="headerlink" title="接下来的打算"></a>接下来的打算</h2><p>1.迁移Typecho博客里的文章<br>2.慢慢优化<br>3. ….</p><p>先这样吧！！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的折腾史 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自用免流整理</title>
+      <link href="/p/Myself-Free-Flow-Arrange.html"/>
+      <url>/p/Myself-Free-Flow-Arrange.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>用免流已经5-6年了吧，因为一直漂泊，也从来没有牵过宽带啥的，说到底还是穷的。</p></blockquote><h1 id="目前的情况"><a href="#目前的情况" class="headerlink" title="目前的情况"></a>目前的情况</h1><p>前段时间学校推行免费使用校园网20多天，这两天就要没了，49-79的套餐对我来说<br>是很难负担的，毕竟本身卡就很多。</p><p>索性，未雨绸缪先配置一下，然后一劳永逸，毕竟这玩意不关机，就基本不需要动它，<br>也没啥技术含量。</p><p>因为联通刘邦卡，可操作性就很高了，百度直连配合配合cns，或者v2定向。</p><p>cns和v2定向都是需要服务器的，目前的钱包还是捉襟见肘哈。</p><h1 id="我的选择"><a href="#我的选择" class="headerlink" title="我的选择"></a>我的选择</h1><p>结合自身的情况我做了下排除。</p><p>首先我是不怎么玩游戏的，所以其实单纯地百度直连是可以勉强满足我的。</p><p>另外我一般不怎么翻墙，就偶尔看看github和YouYube用一下。</p><p>综上所述，我是可以不需要单独再去购买服务器，去搭cns和v2的。</p><p>哈哈其实还是月前花销大了，贫穷使我不断思考。</p><h1 id="免流应用"><a href="#免流应用" class="headerlink" title="免流应用"></a>免流应用</h1><p>根据上面的得出结果，得出的方案。</p><ul><li>百度直连日用(udp不放行)<a href="https://wwa.lanzoui.com/inAI4ut6yod">微改百度直连脚本</a></li></ul><p>百度直连不用UDP的话微信、QQ电话是感人，图片加载也会有些毛病，但是能用。</p><p>百度直连我使用的是ZJL的脚本，它内置的UDP检测ip出坏掉了，后面的更新中也没有修复(<em>估计是怕查表</em>)，我给替换成了腾讯的time1.cloud.tencent.com,具体位置是在<em>模块/ZJL 713行左右</em>如图:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/修改UDP检测.jpg " width="200" height="500" ><ul><li>V2手厅(<em>需要用UDP时使用，比如直播啥的</em>)<a href="https://wwa.lanzoui.com/ip1B6ut6upa">V2手厅</a></li></ul><p>V2完整名字V2ray，我用的是别人的魔改版本，谁改的我也不知道哈。</p><p>v2的话我是白嫖的Citrons家的，评价是需求少<em>能用</em>！</p><p>在开启ZJL脚本的同时分应用代理还是不错的，如图:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/cdn@1.0/tk/分应用代理.jpg" width="200" height="500" ><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>又出了点小问题，今天下午用ZJL开热点，然后电脑开V2ray出问题了，发现跳点很大，去配置看才发现，没有填伪装。</p><p>填上了伪装又有问题了，直接无网了。我得理解是，ZJL脚本全局的情况，电脑开V2属于绕行，应该不冲突的，但是就是没网，<br>关闭了手机防跳，开电脑V2有网了，说明两者之间存在冲突，然而我弄不明白哈。</p><p>来回关闭防跳太麻烦了，我<em>只有1g</em>的通用，显然不够跳的。</p><p>没办法只能折腾了脚本，之前用ZJL+v2的脚本，访问外网查ip加载什么的特别慢，用软件版就没有问题。</p><p>下午又试试了，才发现是我自己的问题，它默认的dns是223.6.6.6,我给改成了129.29.29.29，反而拖累了，默认原来的<br>脚本也正常访问了，真是尴尬哈。</p><p>能正常使用了，就改了一下脚本，增加了几个启动命令，对部分语法进行了精简，索性语法是相同的，勉勉强强，按着自己的习惯，改的差不多了。</p><p>这里进行备份：<a href="https://wwa.lanzoui.com/iiBIDutzqxi">个人习惯修改版</a><br>修改内容如图(版权归属<em>ZJL</em>哈，我只是进行了<em>简单修改</em>)：</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/ZJL修改部分.jpg" width="200" height="500" ><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>归根到底还是<em>穷</em>哈！生活所迫，不然谁折腾免流呢，百度直连配合V2走UDP只能说<em>能用</em>。</p><p>毕竟现在上学，其实需求不是太大。</p><p>如果可以的话，过几天还是要购买服务器的，因为打算迁移博客到外国，这个轻量云，就可以用来cns了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的折腾史 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论自我疏导</title>
+      <link href="/p/Talk-Myself-Open.html"/>
+      <url>/p/Talk-Myself-Open.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>自我疏导？其实想标题挺难的，问问自己想写什么，算是一次自我梳理吧，就不在杀死脑细胞了。</p></blockquote><h1 id="第一幕"><a href="#第一幕" class="headerlink" title="第一幕"></a>第一幕</h1><ul><li><p>我呢，是一个无脑意淫家，脑子里不时会冒出些雄心壮志，可是到了实践，不是三分热度，就是因为顾虑太多，扼杀在了理想的摇篮中了。</p></li><li><p>我目前对自己还没有定位，我羡慕别人做得比我好，羡慕别人什么都会，嫉妒别人年龄小，却比我懂得多，格局小了。</p></li><li><p>在一次思政课上，偶然听了徐涛老师的课，他说过一句话，用我的理解大概是这样：“人一般能产生羡慕的对象，和自己的差距是不大的。”</p></li><li><p>我觉得他说的很对啊，我从来没羡慕过马云之流，当彼此之间的差距变成了天堑，也就无从羡慕了。</p></li><li><p>我说这个是干什么呢？是想告诉自己人的一生的经历是有限的，不可能样样都精通，偏离自己轨道的体验，是一种不确定品，随着时间的流逝，你将淡忘甚至遗忘，那种经历的体验。</p></li><li><p>我一直坚信放射性圆圈理论(我自己起的名字，大概的意思的人的交际轨迹)，学好一样东西，也就是专精，它是为你提供联系的基础，因为所谓的圈子里的人，是多彩的，所以你得有专精和精通。</p></li><li><p>羡慕是促生动力的良药，但是它不是满足虚荣心的自我安慰。</p></li></ul><h1 id="第二幕"><a href="#第二幕" class="headerlink" title="第二幕"></a>第二幕</h1><ul><li><p>时不时会想，人死之后会怎么样，这个话题一直没有得到定论，有人说细胞循环，有人说投胎转世，这些都是迷之又迷的东西。</p></li><li><p>你可能会问，我想这些干什么？因为经常性的迷茫，在自己碌碌无为的同时，脑海里也有另一种声音，在问活着的意义。<br>这些不确定因素告诉我，人生只有一次！</p></li><li><p>我可以放纵自己一次次堕落，允许在看了擦边图释放子孙后，保证下次不犯，结果打脸；允许躺在床上抱着手机，消磨时光；因为现在还有我的父母在替我负重，我很自私。</p></li><li><p>每当我消磨着时光，比如吧看了一天小说，我会很空虚，看了这么多书，好像能记起来的人不多了，当时是快乐了，可是我的空虚好像有多了，每到这个时候，我都不经在想，这一辈子，都得这样活着了吗？那好像太没意思了。</p></li><li><p>我也有过振作，人前人后我是两个人，我一直认为需要一个人来管我，因为我太不自觉，可是谁又有义务呢？</p></li><li><p>现在网络上的很多精神食品来的很容易，删除再下回来的成本不高，我害怕去看书，因为一看，绝对是好几天，我曾有过卸载，但是就行我所说的，下回来的成本很廉价，所以再也不想删了。</p></li></ul><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><ul><li><p>生活还要继续呢，该怎么过呢？我不知道，可总得有个优先级，或者说原则吧？</p></li><li><p>我是在质疑，也是在尝试，我可以失败，我可以颓废，可是之后呢？</p></li><li><p>生活还要继续啊!</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便写写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>二进制与十进制的转换</title>
+      <link href="/p/Binary-Decimal-Conversion.html"/>
+      <url>/p/Binary-Decimal-Conversion.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>之前老师在讲ip的时候涉及了二进制与十进制的转换，没有学过，听起来一愣一愣的，今天听C语言的课，整型数据的转换，也涉及了<br>二进制与十进制的转换，无奈只能临时去学一下。</p><blockquote><p>下面是根据我自己的理解做的笔记。</p></blockquote></blockquote><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p><em>二进制的数:0-1</em><br><em>十进制的数:0-9</em><br>转换的时候是从右往左依次增加，从下往上依次写，至于为啥这样，人家是这样定义的，照着用就行。</p><h1 id="二进制转十进制"><a href="#二进制转十进制" class="headerlink" title="二进制转十进制"></a>二进制转十进制</h1><p><em>拿二进制数1001000举例:</em><br>有两种转换的记忆方法如图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/二进制转十进制.jpg" ></p><h1 id="十进制转二进制"><a href="#十进制转二进制" class="headerlink" title="十进制转二进制"></a>十进制转二进制</h1><p><em>拿十进制数152举例:</em><br>转换方法有<em>短除法、观察法</em>如图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/十进制转二进制.jpg" ></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>进制之间的转换其实用的不多，就怕哪天考着了，先写下放着，文字都是根据自己理解写的，字写的不好，反正我能看懂就行了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>迷</title>
+      <link href="/p/confused.html"/>
+      <url>/p/confused.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>如题“迷”，迷茫。</p></blockquote><h1 id="辞掉了兼职"><a href="#辞掉了兼职" class="headerlink" title="辞掉了兼职"></a>辞掉了兼职</h1><p>其实一开始是想做一年的，结果还没做够一星期。有三分钟热度，有一部分的身体原因。</p><p>这个事情整的吧，挺不好面对信任我的阿姨的。导致本人也挺尴尬的，吃饭的话，也都绕路。</p><p>辞掉了工作，本来以为可以做些，自己喜欢的事情了，结果好像更加颓废了。</p><p>20号立下的壮志，感觉很打脸。</p><h1 id="害怕开始"><a href="#害怕开始" class="headerlink" title="害怕开始"></a>害怕开始</h1><p>不知道你们有没有这样的经历，上课的时候脑袋里一堆想法，回到寝室却感觉十分迷茫，不知道要做什么，<br>就算已经想起想做什么了，也没了动力。</p><p>我一直以来都认为没有准备好，时间不充足，想要最好的，最后什么也没有做好。</p><p>其实只是，内心的害怕，害怕。</p><h1 id="对过往"><a href="#对过往" class="headerlink" title="对过往"></a>对过往</h1><p>昨天思政课，看了b站，徐涛老师的课，他20-30岁的人生经历了很多。体验是一种会忘掉的感觉，我一直以来，啥都想比别人强，结果这做一点，哪做一点，结果什么都没有做好。</p><p>体验是有了，可是再回忆的时候是缥缈的。</p><p>久得娴熟，这是有道理的，一直在用，所以映像很深。</p><h1 id="对身体"><a href="#对身体" class="headerlink" title="对身体"></a>对身体</h1><p>身体现在很虚，很虚，但是我却还是在无尽的透支。</p><p>我得改变，我得接受失败，我得爬起来，因为明天还得继续。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>其实想着，想着，又忘记了很多，尽管依旧迷茫，但是大体是想告诉自己，做一个精彩的人，不为别人，就为自己，左顾右盼，不如一路向前，不能做一个包括全部的大圈子，就缩小圈子，慢慢沉浸。</p><p><b>2021.10.06,补充: 我正在迁移博客的路上，送自己最近写的一句话:“别说我不行，前面的路很精彩，往前走你能行！”</b></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便写写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大一寒假前的小目标</title>
+      <link href="/p/Freshman-Winter-Vacation-short-goal.html"/>
+      <url>/p/Freshman-Winter-Vacation-short-goal.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>人生没有梦想，和一条咸鱼有什么区别。</p></blockquote><p>我啊这条咸鱼没事也得翻翻身，给自己找个flag，避免颓废。<br>就先定亿个小目标吧。</p><h1 id="买一辆电动车"><a href="#买一辆电动车" class="headerlink" title="买一辆电动车"></a>买一辆电动车</h1><p>在大一寒假结束前，给麻麻买一个小型电动车(一千多左右)。</p><h1 id="用C语言完成一份作业"><a href="#用C语言完成一份作业" class="headerlink" title="用C语言完成一份作业"></a>用C语言完成一份作业</h1><p>大一寒假前掌握熟悉运用C语言基础。<br>并用C语言完成一份菜单作品。</p><h1 id="菜单功能"><a href="#菜单功能" class="headerlink" title="菜单功能:"></a>菜单功能:</h1><ul><li>已有菜单内容查询</li><li>同价位菜单筛选列表</li><li>菜品储存，添加菜品</li></ul><p>先这样吧！时间就像海绵里的水，挤一挤好像还是可以有时间跟你们吐槽的。</p><p><b>2021.10.6: 补充,我正在迁移博客的路上，第一个小目标因为暂时辞职，不确定性很大，第二个目标，加油！</b></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便写写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>红米k30pro简单折腾</title>
+      <link href="/p/Redmi-k30-Pro-Simle-Revise.html"/>
+      <url>/p/Redmi-k30-Pro-Simle-Revise.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>从红米note4x换到红米k30pro已经有十几天了，今天终于解了bl，我的mido也终于可以解放，抽屉吃灰了。</p><blockquote><p>折腾了什么？</p></blockquote></blockquote><h1 id="刷入原改rec"><a href="#刷入原改rec" class="headerlink" title="刷入原改rec"></a>刷入原改rec</h1><p>在从酷安找到了，解密data的rec下载后，发现只有img主程序，本人对此七窍通了六窍，所以又去找了，一件刷入脚本，进行导入，索性能用了。</p><h1 id="刷入面具-Magisk"><a href="#刷入面具-Magisk" class="headerlink" title="刷入面具(Magisk)"></a>刷入面具(Magisk)</h1><p>从23版本的面具起，刷入的方式就有了一定的变化，只要下载面具安装包，在把它的后缀改成zip格式就可以在rec内刷入了。当然听说经常翻车。</p><p>在酷安评论区看见，先去备份boot，备份的boot在twrp/backup里面，不同的备份日期不同，再用面具提供的第一种方式，修补boot(选择.win后缀的)，便会系统文件Download内得到一个以Magisk开头的文件，去rec刷入，就可以获得面具权限了。</p><p>在去备份面具的过程中翻车了，我的rec在重启中被系统原rec覆盖了，试了几遍，还是老样子，再去群里素质三连问后，才得知这已经不是mido的时代了，刷入rec后需要准备好面具卡刷包，同时刷入，无奈再进行了一遍，虽然不费事。</p><h1 id="放置整合的ZJL防跳"><a href="#放置整合的ZJL防跳" class="headerlink" title="放置整合的ZJL防跳"></a>放置整合的ZJL防跳</h1><p>我解bl，刷面具最大的原因还是免流，5-6过常年不在家，也没有安置宽带，免流就成了必需品，毕竟单现在的流量还是蛮贵的。</p><p>不过学校为了大力宣传校园网，对我们还是挺友好的，免费使用22天，100m宽带。虽然如此还是内置了ZJL毕竟学校范围内，是多wifi覆盖，每一次都需要验证，其实相对来说我是很懒的。</p><h1 id="下载一些app"><a href="#下载一些app" class="headerlink" title="下载一些app"></a>下载一些app</h1><p>购物、通讯app是不可缺少的，其实也没多的啥，顶多就是下载了一些，精简的应用干净了眼睛。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>目前19岁，已经不爱折腾了，生活遵循的原则，是能用就行，用的舒服就行了，大多去折腾的原因是生活所迫，轻度强迫症吧。</p><p>没有做图和链接，是因为写给自己看的，软件的更新换代是很快的，总结的经历是很大的，去搜一下就可以，随便写写，也只是偶尔看看。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的折腾史 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 手机养老 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>宏碁传奇X热键功能恢复</title>
+      <link href="/p/Acer-Legend-X-Hotkey-Recover.html"/>
+      <url>/p/Acer-Legend-X-Hotkey-Recover.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="恢复原热键功能的原因"><a href="#恢复原热键功能的原因" class="headerlink" title="恢复原热键功能的原因"></a>恢复原热键功能的原因</h1><blockquote><p>现在的笔记本电脑，厂家一般都会换热键功能，做一些快捷键的使用。</p><p>它在一定程度上帮助了我们，但是很多软件的快捷功能是架设在原系统热键的基础上的。</p><p>厂家修改过后，再次使用原热键功能，像我的宏碁传奇X就需要配合Fn进行使用，对于我这类手小巧的孩子是不适合的。</p></blockquote><h2 id="应该怎么恢复呢？"><a href="#应该怎么恢复呢？" class="headerlink" title="应该怎么恢复呢？"></a>应该怎么恢复呢？</h2><p>就拿我的宏碁传奇X进行演示吧！</p><p>-首先，重启电脑，长按F2进入BISO界面。如图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/bios%E9%A1%B5%E9%9D%A2.jpg" alt="BISO"></p><p>-然后咱们通过键盘向右移动到Main页面，找到function key behavior 一栏，回车。如图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/%E6%9B%B4%E6%94%B9%E7%83%AD%E9%94%AE.jpg" alt="修改热键"></p><p>这样就修改完成了！</p><p>-再按F10进入如图界面:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/%E4%BF%9D%E5%AD%98%E9%80%80%E5%87%BAbios%E7%95%8C%E9%9D%A2.jpg" alt="保存退出Biso界面"></p><p>回车等待重启就好了。</p><p>###结论<br>经过上述修改后，热键功能就恢复了，如果你还想使用厂家设置的快捷功能，也很简单，只需要Fn加之前对应的快捷键就行了，一般键盘上会有标注。</p><p>其实呢厂家的快捷键蛮好用的，但奈何本人手小巧还喜欢折腾，没办法的事情。</p><p>我只是拿我自己的机型做一个演示，基本适用大多数机型，如果你不行。</p><p>请去百度自己的:机型+如何恢复原热键功能 类似的字样。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的折腾史 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的笔记本使用技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大一正式上课前的样子</title>
+      <link href="/p/Freshman-Initial-Iook.html"/>
+      <url>/p/Freshman-Initial-Iook.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>拿着手机走在操场上，想拍几张风景记录最开始进入学校的样子，时侯不佳错过好的风景，奈何不喜欢散步带手机，风景不错的时侯，又感叹没有带手机。</p></blockquote><p>他们说检测大学过的是否有意义，可以拍下最初进学校的样子，等毕业了在对比，就知道过的怎么样。<br>本人不太出镜，有没有什么日常照片，就拿目前的寝室桌面充数吧。</p><p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/%E6%AD%A3%E5%BC%8F%E4%B8%8A%E8%AF%BE%E5%89%8D.jpg" alt="大学开学的样子"></p><p>所幸下午刚发了课本，一切不是那么空。</p><p>向好友志豪倾诉了关于未来的焦虑，暂时也没有定下方向，虽然他们都说专科学不到什么，没办法谁让我曾经潇洒过呢。<br>吃不了体力饭，也想用双手创造财富，希望这将是我未来的阶梯。</p><p>第一学期暂定目标:<br>-c语言基础，书本内容扎实。<br>-计算机英语大部分熟练。<br>-flutter逐步学习。<br>-就这样吧，累了呢。</p><p>现在是2021.10.6正在迁移博客的我不得又不充点：<br>-flutter移动端的事情可能需要放一放了。<br>-我还是希望朝移动端发展的，不过现在呢还是有点迷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便写写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>白马之行</title>
+      <link href="/p/bai-ma-zhi-xing.html"/>
+      <url>/p/bai-ma-zhi-xing.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>报道的第二天，不想闷闷的待在寝室，于是去了学校的白马公园。</p></blockquote><p>初见，觉得只是一个座小山，闲情逸致，细嗅蔷薇，好生闲暇。</p><p>我是个不喜欢走回头路的人，一路向前，随心所欲。</p><p>不料就此翻车，一头走出学校，来到无人之地，没有手机，任何身份信息。</p><p>恐慌之下，原路返回，再回头，才发现，白马之小，黄石山之大，错综复杂，跳望间心生畏惧。</p><p>佛说，回头是岸，原来是有道理的，所有的事情不是非黑即白，需要理性的去看待。</p><p>重复的路来回走去，蚊虫甚多，我走在期间，很害怕，很害怕，但是又很奇怪，我没有担心走不出去，甚至一边走，一边还在想需要配备一个什么样的说说，来解此情此景。</p><p>结局是我走了出来，写了这篇文章，但是我知道过程很艰辛，是我用文字表达不出来的，出来的那一刻，我是想欢雀跃的，但是想想还是算了，毕竟这是学校。</p><p>也许你听了很唏嘘，白马之行，不知白马，你不在此山中，自然是“局外者清了”，仅此而已。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便写写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>针对Single主题的部分改动</title>
+      <link href="/p/anti-Single-Themes-revise.html"/>
+      <url>/p/anti-Single-Themes-revise.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>针对保罗的single主题，个人使用的一些小小改动。<br>这里借鉴了<a href="https://rzfyu.com/264.html" title="汝者非鱼">汝者非鱼</a>的部分改动方案。  </p></blockquote><h1 id="1-正文部分"><a href="#1-正文部分" class="headerlink" title="1-正文部分"></a>1-正文部分</h1><blockquote><details></blockquote><summary><b>点击我打开折叠</b></summary><p><strong>single.css 33</strong>文章字体正常化。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-weight: 400;</span><br></pre></td></tr></table></figure><p><strong>single.css 32</strong>文章字体加粗。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color: #1f1f1f;</span><br></pre></td></tr></table></figure><p><strong>kico.css 235</strong>加大点红字比例。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-size: 100%;</span><br></pre></td></tr></table></figure><p><strong>kico.css 90</strong>玻璃框宽度大点。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wrap.min&#123; max-width: 850px &#125;</span><br></pre></td></tr></table></figure><p><strong>kico.css 280</strong>引用字体不斜体。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-style: oblique;</span><br></pre></td></tr></table></figure><p><strong>post.php</strong>删除一条带blockquote的代码（即下面这个），表示删掉“修改于 n 天前”的功能。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php if(time() - $this -&gt; modified &gt;= 15552000): ?&gt;</span><br><span class="line">            &lt;blockquote&gt;这篇文章上次修改于 &lt;?php echo ceil((time() - $this -&gt; modified) / 86400) ?&gt; 天前，可能其部分内容已经发生变化，如有疑问可询问作者。&lt;/blockquote&gt;</span><br><span class="line">&lt;?php endif ?&gt;</span><br></pre></td></tr></table></figure></details>  <h1 id="2-字号功能"><a href="#2-字号功能" class="headerlink" title="2-字号功能"></a>2-字号功能</h1><blockquote><details></blockquote><summary><b>点击我打开折叠</b></summary>把下面的代码放入footer.php里。我放置的位置在55行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function FontZoom(fsize)&#123;</span><br><span class="line">    var ctext=document.getElementById(&quot;arctext&quot;);</span><br><span class="line">    ctext.style.fontSize=fsize +&quot;px&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p><b>第二步</b>:<br>…</p></details>  <p>…<br>因为代码块的原因，只能暂时终止后续步骤，等过几天研究一下再看。</p><p>不用研究了emmmm，已经转Hexo，真遗憾！</p><p>所以想做就去做吧，别找借口，再想做时可能就晚了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的折腾史 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typecho </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Typecho稳定版升级开发版记录</title>
+      <link href="/p/Typecho-stable-bate-Version.html"/>
+      <url>/p/Typecho-stable-bate-Version.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。</p></blockquote><h1 id="升级目的"><a href="#升级目的" class="headerlink" title="升级目的"></a>升级目的</h1><p>typecho稳定版对markdown的支持有点拉跨，部分语法无法正常食用，混用html的语法又显得麻烦，我这个人是炒鸡懒的。</p><h1 id="升级过程"><a href="#升级过程" class="headerlink" title="升级过程"></a>升级过程</h1><ul><li>首先在Typecho的github上获取最近更新的文件。</li><li>然后对博客的数据进行备份，防止意外。</li><li>接着删除网站后台:【admin(我修改成了zihan)、var、index.php】如图:</li></ul><p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/typecho%E5%8D%87%E7%BA%A7%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6.png" alt="我的后台文件"></p><ul><li>删除完成后，我们再把刚刚从github下载的开发版，对应文件：admin、var、index.php上传即可。</li><li>上传完成后，我们进入博客的后台，看到如图界面:</li></ul><p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn@1.0/tk/%E6%9B%B4%E6%96%B0typecho%E5%BC%80%E5%8F%91%E7%89%88.png" alt="升级成功"></p><ul><li>便是成功了！</li></ul><h1 id="开发版的体验"><a href="#开发版的体验" class="headerlink" title="开发版的体验"></a>开发版的体验</h1><p>升级成功后，再次食用markdown语法，之前不能显示的语法，就可以正常食用了。<br>感觉还是蛮香的。</p><p>好了以上便是本次的全部内容了，感谢各位看客！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的折腾史 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typecho </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
