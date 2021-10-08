@@ -180,13 +180,13 @@
 <p>一下简单的回忆一下Hexo的部署过程和一些常用的指令</p>
 </blockquote>
 <h1 id="需要用到的工具"><a href="#需要用到的工具" class="headerlink" title="需要用到的工具"></a>需要用到的工具</h1><ul>
-<li><p><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a><br><font color="#00FFFF">内容管理工具</font></p>
+<li><p><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a><br>内容管理工具</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a><br><font color="#00FFFF">JavaScript 运行时环境</font></p>
+<li><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a><br>JavaScript 运行时环境</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a><br><font color="00FFFF">静态博客框架</font></p>
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a><br>静态博客框架</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://github.com/">Github</a><br><font color="00FFFF">代码托管平台</font></p>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/">Github</a><br>代码托管平台</p>
 </li>
 </ul>
 <h1 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h1><ul>
@@ -205,7 +205,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate  //生成Html静态页面，简写 hexo g</span><br><span class="line"></span><br><span class="line">hexo server //启动本地服务，简写 hexo s </span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>启动会提示在浏览器输入:“<a href="http://localhost:4000”进行访问，好了Hexo博客在本地就正式运行了，使用Ctrl+c可以中断本地服务。">http://localhost:4000”进行访问，好了Hexo博客在本地就正式运行了，使用Ctrl+c可以中断本地服务。</a></li>
+<li>启动会提示在浏览器输入“<a href="http://localhost:4000”进行访问，好了Hexo博客在本地就正式运行了，使用Ctrl+c可以中断本地服务。">http://localhost:4000”进行访问，好了Hexo博客在本地就正式运行了，使用Ctrl+c可以中断本地服务。</a></li>
 </ul>
 <h1 id="部署到托管平台"><a href="#部署到托管平台" class="headerlink" title="部署到托管平台"></a>部署到托管平台</h1><ul>
 <li><p>搭建博客大概率不是想放在本地了，这时候就需要服务器就行托管。</p>
@@ -265,11 +265,13 @@
 <p>Eg: 我的用户名zihanla 我需要访问我 仓库cdn/tk/img/logo.png的图片只需要这样写:</p>
 <p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/img/logo.png">https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/img/logo.png</a> 即可访问我这个图片</p>
 <p>这里不建议在仓库名后加@版本号，因为如果这样每一次上传文件都需要进行发布，省略@加版本号则默认获取最新版。</p>
-<p>2.Github 上有软件上传和网页上传的项目(我比较喜欢手动的过程，就不写这些方式了)</p>
+<ol start="2">
+<li>Github 上有软件上传和网页上传的项目(我比较喜欢手动的过程，就不写这些方式了)</li>
+</ol>
 <ul>
 <li>这里再补充一个我在上传时候需要的问题和解决方案</li>
 </ul>
-<p>我在github上修改了README.md但是本地端没有进行拉取，然后上传文件就eron了。</p>
+<p>我在github上修改了README.md但是本地端没有进行拉取，然后上传文件就error了。</p>
 <p>这里的话建议把仓库再次拉取一下到本地，覆盖本地的README.md文件，然后就可以正常上传了。</p>
 <p>也可以<strong>git push -f</strong>上传，不过这样的话，你的README.md就被本地的给覆盖了，你写的内容也就…..</p>
 <h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>因为没人康我的博客，我也就没有专门去做图片，毕竟现在网上教程那么全面，我只是揪出一部分，给自己康康哈，自己能康懂就行了。</p>
