@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>骑行的收获</title>
+      <link href="/p/The-Cycling-Reward.html"/>
+      <url>/p/The-Cycling-Reward.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>今天因为要去激活一下网上申请的信用卡，银行地方有点远，于是就骑了单车，这是我来黄石第三次骑单车，感觉特别爽。</p></blockquote><h1 id="说说现状"><a href="#说说现状" class="headerlink" title="说说现状"></a>说说现状</h1><p>&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp没有方向，走到哪儿是哪儿，很杂很乱，有些糟糕，但是也有慢慢改变。</p><h1 id="骑小单车"><a href="#骑小单车" class="headerlink" title="骑小单车"></a>骑小单车</h1><p>&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp最开始来黄石，特别迷茫，第一次骑单车和室友一起，没有方向，骑了不远，但是感觉骑了好久，中途迷过路，导航不会用，但是一路向前，索性没有停歇，幸运神还是眷顾我们的，左拐右拐，骑回了学校。</p><p>&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp后来骑单车，慢慢会用了语音导航，这也是数年没骑车后，第一次有了骑车的感觉，银行在哪里我不知道，但是真的想喊一句，高德在手，天下我有！</p><p>&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp终于，我有了时间，可以享受骑车的快感，不用担心走丢，没人的时候，站立猛蹬；人多的时候，捏闸缓行；放开闸从高坡滑行是真的爽，我知道从此，无聊的生活又有了些色彩，我知道————这是骑行带给我的，升上多余的荷尔蒙，在这里得到了释放。</p><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp骑车如此，其实生活也如此，走走停停，有一路平坦，也呕吐不平，但是骑过了这一段，又是一道风景。前面什么样谁知道呢?但是停下了就看不到了啊！</p><h1 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h1><p>&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp&amp;nsbp第一次骑行10多公里，记录一下哈！<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/17/骑行里程1.jpg" width="200" heigth="500"><br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/17/骑行里程2.jpg" width="200" heigth="500"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便写写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux-DD-Win10</title>
       <link href="/p/Linux-DD-Win10.html"/>
       <url>/p/Linux-DD-Win10.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>自从把Typecho换成Hexo我的轻量云就荒废了，这怎么能忍？<br>所以就打算换成win挂点机器人啥的。<br>但是由于腾讯云提供的win镜像懂得都懂。<br>所以就打算dd别人精简的win10。</p></blockquote><h1 id="10-11补充"><a href="#10-11补充" class="headerlink" title="10.11补充"></a>10.11补充</h1><ul><li><p>之前自己用的那个脚本不完整，刷入翻车了，不过我又重新找到了他家镜像站<a href="http://d.nat.ee/">nat.ee</a>相信应该挺眼熟的</p></li><li><p>这里我用了Win-Server2012，再用了<strong>DebianNET.sh</strong>脚本刷入，速度快了不少。这里放一下我挂着微信框架的占用图:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/超低的占用.png"></li></ul><p>后期的话我决定再挂个小栗子框架，感觉轻量云的余热仍在发光，哈哈</p><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul><li><p>一台服务器</p></li><li><p>DD脚本<br>这里直接选择脚本无脑安装。这里踢一下<strong>Vicer</strong>DebianNET.sh 脚本的开发者</p></li><li><p>需要安装的镜像<br>这里提供一下我之前用的<a href="https://disk.onji.cn/s/PY9dtP">Win10-Ltsc</a></p></li><li><p>试了下秋水大大镜像，挺干净的，但是相对于我的小鸡来说，满载的CPU，还是放弃了</p></li></ul><h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><ul><li>操作很无脑，只需要配合我们<strong>DebianNET.sh</strong>脚本和<strong>镜像</strong>直链就行了</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -qO DebianNET.sh qiu.sh/dd &amp;&amp; bash DebianNET.sh -dd &quot;DD download URL&quot;</span><br><span class="line"></span><br><span class="line">//DD download URL 替换成镜像直链地址</span><br></pre></td></tr></table></figure><ul><li><p>复制你修改完的一串脚本，然后用root用户连接ssh，复制回车，搞定！如图所示:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/ltsc下载.png"  ></li><li><p>然后就是无尽的等待啊，无尽的等待，大概20分钟-n小时不等，我下载花了，不到10分钟，分区花了….</p></li><li><p>如果你在VNC看到<strong>Starting up the partitioner</strong>进度一直为零，不要慌着去重置，一个字等就是，正在进行分区呢！</p></li><li><p>其实我也一度以为它被窝玩坏了，结果吃饭点进去又好了emmmmm。</p></li><li><p>还是配张图好了:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/漫长的分区过程.png" ></li><li><p>对了再补充一下，怎么获取直链呢，点击下载镜idm等工具会获得一串下载地址那个就是直链，当然是零时的。</p></li><li><p>你可能会问，为啥你鸡鸡这么小，还好用win10,20系列不香吗？emmm，我其实也想用20系列，只是可能我需要的框架再win10构建比较稳定。</p></li></ul><h1 id="成品展现"><a href="#成品展现" class="headerlink" title="成品展现"></a>成品展现</h1><p>主界面:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/挺干净的.png" ></p><p>配置图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/Win10配置图.png" ></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>自从把Typecho换成Hexo我的轻量云就荒废了，这怎么能忍？<br>所以就打算换成win挂点机器人啥的。<br>但是由于腾讯云提供的win镜像懂得都懂。<br>所以就打算dd别人精简的win10。</p></blockquote><h1 id="10-11补充"><a href="#10-11补充" class="headerlink" title="10.11补充"></a>10.11补充</h1><ul><li><p>之前自己用的那个脚本不完整，刷入翻车了，不过我又重新找到了他家镜像站<a href="http://d.nat.ee/">nat.ee</a>相信应该挺眼熟的</p></li><li><p>这里我用了Win-Server2012，再用了<strong>DebianNET.sh</strong>脚本刷入，速度快了不少。这里放一下我挂着微信框架的占用图:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/超低的占用.png"></li><li><p>后期的话我决定再挂个小栗子框架，感觉轻量云的余热仍在发光，哈哈</p></li></ul><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul><li><p>一台服务器</p></li><li><p>DD脚本<br>这里直接选择脚本无脑安装。这里踢一下<strong>Vicer</strong>DebianNET.sh 脚本的开发者</p></li><li><p>需要安装的镜像<br>这里提供一下我之前用的<a href="https://disk.onji.cn/s/PY9dtP">Win10-Ltsc</a></p></li><li><p>试了下秋水大大镜像，挺干净的，但是相对于我的小鸡来说，满载的CPU，还是放弃了</p></li></ul><h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><ul><li>操作很无脑，只需要配合我们<strong>DebianNET.sh</strong>脚本和<strong>镜像</strong>直链就行了</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -qO DebianNET.sh qiu.sh/dd &amp;&amp; bash DebianNET.sh -dd &quot;DD download URL&quot;</span><br><span class="line"></span><br><span class="line">//DD download URL 替换成镜像直链地址</span><br></pre></td></tr></table></figure><ul><li><p>复制你修改完的一串脚本，然后用root用户连接ssh，复制回车，搞定！如图所示:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/ltsc下载.png"  ></li><li><p>然后就是无尽的等待啊，无尽的等待，大概20分钟-n小时不等，我下载花了，不到10分钟，分区花了….</p></li><li><p>如果你在VNC看到<strong>Starting up the partitioner</strong>进度一直为零，不要慌着去重置，一个字等就是，正在进行分区呢！</p></li><li><p>其实我也一度以为它被窝玩坏了，结果吃饭点进去又好了emmmmm。</p></li><li><p>还是配张图好了:</p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/漫长的分区过程.png" ></li><li><p>对了再补充一下，怎么获取直链呢，点击下载镜idm等工具会获得一串下载地址那个就是直链，当然是零时的。</p></li><li><p>你可能会问，为啥你鸡鸡这么小，还好用win10,20系列不香吗？emmm，我其实也想用20系列，只是可能我需要的框架再win10构建比较稳定。</p></li></ul><h1 id="成品展现"><a href="#成品展现" class="headerlink" title="成品展现"></a>成品展现</h1><p>主界面:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/挺干净的.png" ></p><p>配置图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/10/Win10配置图.png" ></p>]]></content>
       
       
       <categories>

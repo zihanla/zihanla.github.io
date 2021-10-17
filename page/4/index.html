@@ -8,18 +8,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<title>Typecho稳定版升级开发版记录 | 闲人自述</title>
+<title>闲人自述</title>
 <link href="/img/favicon.png" rel="shortcut icon">
 <meta name="author" content="子涵 ">
 <meta name="copyright" content="子涵">
-<meta name="keywords" content="Typecho">
-<meta name="description" content="Typecho开发版对markdown语法更加兼容" />
+<meta name="keywords" content="">
+<meta name="description" content="" />
 <meta property="site_name" content="闲人自述 " />
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html">
-<meta property="og:title" content="Typecho稳定版升级开发版记录 | 闲人自述" />
+<meta property="og:url" content="https://blog.hxcpl.cn/page/4/index.html">
+<meta property="og:title" content="闲人自述" />
 <meta property="og:site_name" content="闲人自述" />
-<meta property="og:description" content="Typecho开发版对markdown语法更加兼容" />
+<meta property="og:description" content="" />
 <meta property="og:locale" content="zh-CN">
 <meta property="article:author" content="子涵 ">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -137,167 +137,84 @@
         <div id="main-wrap">
                 <main class="main">
                      
-                     
-
-<article class="post">
-  <div class="post-info">
-    <div class="post-title">
-      <h1>Typecho稳定版升级开发版记录</h1>
+                    
+<header>
+    <div class="header-author">
+        <a href="/" class="author">
+            <img src="/img/logo.png" alt="子涵" class="author-avatar">
+            <div class="author-name">
+                子涵
+            </div>
+        </a>
     </div>
-    <div class="post-meta">
-      <div class="post-date">
-        <i class="far fa-calendar-alt fa-fw post-meta-icon"></i>
-        <span class="post-meta-label">
-          发表于
-            2021-08-28 |
-        </span>
-        
-        <i class="fas fa-history fa-fw post-meta-icon"></i>
-        <span class="post-meta-label">
-          更新于
-            2021-10-17
-        </span>
-      </div>
-      <div class="post-meta-wordcount">
-        <i class="far fa-file-word fa-fw post-meta-icon"></i>
-        <span class="post-meta-label">总字数:</span>
-        <span class="word-count">263 | </span>
-        <i class="far fa-clock fa-fw post-meta-icon"></i>
-        <span class="post-meta-label">阅读时长:</span>
-        <span>1分钟</span>
-        
-        | <i class="far fa-eye fa-fw post-meta-icon"></i>
-        <span id="/p/Typecho-stable-bate-Version.html" class="leancloud_visitors">
-            <span class="post-meta-label">阅读量:</span>
-            <span class="leancloud-visitors-count" id="twikoo_visitors">0</span>
-        </span>
-        
-      </div>
+    <div class="header-description">
+        <p>
+            别说我不行，前面的路很精彩，你能行！
+        </p>
+        <div class="header-icon">
+            
+                <a target="_blank" rel="noopener" href="https://github.com/YWHSYXC"><i class="fab fa-github"></i></a>
+            
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/40026494"><i class="fas fa-play-circle"></i></a>
+            
+                <a target="_blank" rel="noopener" href="http://www.coolapk.com/u/3966924"><i class="fas fa-dot-circle"></i></a>
+            
+        </div>
     </div>
-  </div>
-  <div class="post-content">
-    <blockquote>
-<p>Typecho是一款轻量级的博客，特别适合我这种偶尔写写笔记，吐吐槽的人，不用过于折腾，反正它的简洁我是爱了。</p>
-</blockquote>
-<h1 id="升级目的"><a href="#升级目的" class="headerlink" title="升级目的"></a>升级目的</h1><p>typecho稳定版对markdown的支持有点拉跨，部分语法无法正常食用，混用html的语法又显得麻烦，我这个人是炒鸡懒的。</p>
-<h1 id="升级过程"><a href="#升级过程" class="headerlink" title="升级过程"></a>升级过程</h1><ul>
-<li>首先在Typecho的github上获取最近更新的文件。</li>
-<li>然后对博客的数据进行备份，防止意外。</li>
-<li>接着删除网站后台:【admin(我修改成了zihan)、var、index.php】如图:</li>
-</ul>
-<p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/8/21/typecho%E5%8D%87%E7%BA%A7%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6.png" alt="我的后台文件"></p>
-<ul>
-<li>删除完成后，我们再把刚刚从github下载的开发版，对应文件：admin、var、index.php上传即可。</li>
-<li>上传完成后，我们进入博客的后台，看到如图界面:</li>
-</ul>
-<p><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/8/21/%E6%9B%B4%E6%96%B0typecho%E5%BC%80%E5%8F%91%E7%89%88.png" alt="升级成功"></p>
-<ul>
-<li>便是成功了！</li>
-</ul>
-<h1 id="开发版的体验"><a href="#开发版的体验" class="headerlink" title="开发版的体验"></a>开发版的体验</h1><p>升级成功后，再次食用markdown语法，之前不能显示的语法，就可以正常食用了。<br>感觉还是蛮香的。</p>
-<p>好了以上便是本次的全部内容了，感谢各位看客！</p>
-
-  </div>
-   
-   
-
-  
-  <div class="post-copyright">
-    <div class="post-copyright-icon"></div>
-      <div class="post-copyright-author">
-          <span class="post-copyright-meta">文章作者: </span>
-            <span class="post-copyright-info">
-              <a href="mailto:2622293253@qq.com" >子涵</a>
-            </span>
-      </div>
-      <div class="post-copyright-type">
-          <span class="post-copyright-meta">文章链接: </span>
-            <span class="post-copyright-info">
-              <a href="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html" >https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html</a>
-            </span>
-      </div><div class="post-copyright-notice">
-          <span class="post-copyright-meta">版权声明: </span>
-            <span class="post-copyright-info">本博客采用
-              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " target="_blank" >
-                  CC BY-NC-SA 4.0 </a> 许可协议。没有特别申明，都是本人智慧，借鉴请注明来自
-              <a href="https://blog.hxcpl.cn/p/Typecho-stable-bate-Version.html" target="_blank" >闲人自述</a>
-              ！</span>
-      </div>
-  </div>
-  
-
-
- 
-
-
-
-
-<div class="pagination-post">
+</header>
+<div id="post-list">
+     
     
-    <a href="/p/anti-Single-Themes-revise.html">
-      <div class="prev-title"><i class="fas fa-chevron-left"></i>针对Single主题的部分改动</div>
-      <div class="prev-desc">
-针对保罗的single主题，个人使用的一些小小改动。这里借鉴了汝者非鱼的部分改动方案。  
+        <div class="post-item">
+             
+            <a class="post-title" href="/p/Typecho-stable-bate-Version.html" title="Typecho稳定版升级开发版记录 ">
+                Typecho稳定版升级开发版记录
+            </a>
+            <div class="post-description">
+                 
+                Typecho开发版对markdown语法更加兼容
+            </div>
+            <div class="post-meta-wrap">
+                <span class="post-meta-date">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>发表于  </span>
+                    <span>
+                        2021-08-28
+                    </span>
+                </span>
+                
+                <span class="post-categorie">
+                    <i class="fas fa-folder-open"></i>
+                    
+                        <a href="/categories/%E6%88%91%E7%9A%84%E6%8A%98%E8%85%BE%E5%8F%B2/">
+                            我的折腾史
+                        </a>
+                        
+                    
+                </span>
+                
 
-1-正文部分
-用做分割线
-
-
-点击我打开折叠
-
-single.css 33文章字体正常化。
-1fo...</div>
-    </a>
-    
-    
-</div>
-</article>
-
-    <div class="comment-head" id="直达评论">
-        <hr>
-        <div class="comment-headline">
-            <i class="fas fa-comments fa-fw"></i>
-            <span>评论</span>
+                
+                    <span class="post-tag">
+                    <i class="fa fa-tag"></i>
+                    
+                    <a href="/tags/Typecho/">
+                        Typecho
+                    </a>
+                    
+                    
+                </span>
+                
+            </div>
         </div>
         
-            
-<div id="tcomment"></div>
-<script>
-function LoadTwikoo(){
-  getScript("https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js",function(){
-    initData = {
-      el: '#tcomment',
-      envId: 'https://hxcpl-twikoo.vercel.app/',
-      region: 'ap-shanghai',
-      path: 'window.location.pathname',
-  }
-  var option = false;
-  if(option){
-      initData = Object.assign(initData, option)
-  }
-  twikoo.init(initData);
-  })
-}
-LoadTwikoo()
-</script>
-        
+         
+
+    <div class="pagination">
+        <a class="extend prev" rel="prev" href="/page/3/"><i class='fas fa-chevron-left fa-fw'></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
     </div>
 
- 
- 
-
-  <div id="toc">
-    <div class="toc-title">
-      <div>
-        目录
-          <span class="num">0%</span>
-      </div>
-      <progress class="progress" value="0" max="100"></progress>
-    </div>
-    <div class="toc-list">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E7%9B%AE%E7%9A%84"><span class="toc-text">升级目的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E8%BF%87%E7%A8%8B"><span class="toc-text">升级过程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E7%89%88%E7%9A%84%E4%BD%93%E9%AA%8C"><span class="toc-text">开发版的体验</span></a></li></ol>
-    </div>
-  </div>
+</div>
 
                 </main>
         </div>
@@ -309,21 +226,12 @@ LoadTwikoo()
          
          
         
-            <a id="open-toc" title="目录">
-                <i class="fas fa-list-ul"></i>
-            </a>
-        
          
          
         <a href="javascript:(0)" id="darkmode" title="深色/浅色 ">
             <i class="fas fa-moon"></i>
         </a>
          
-        
-        
-            <a href="#直达评论" title="直达评论">
-                <i class="fas fa-comments"></i>
-            </a>
         
         <a href="#" title="回到顶部">
             <i class="fas fa-arrow-up"></i>
