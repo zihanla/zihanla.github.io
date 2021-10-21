@@ -8,18 +8,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<title>萌典主题配置Waline评论 | 闲人自述</title>
+<title>黎明前的潜伏 | 闲人自述</title>
 <link href="/img/favicon.png" rel="shortcut icon">
 <meta name="author" content="子涵 ">
 <meta name="copyright" content="子涵">
-<meta name="keywords" content="Hexo">
-<meta name="description" content="关于Waline部署的一些注意事项" />
+<meta name="keywords" content="随记">
+<meta name="description" content="回过头来看看很多之前认为很难的事情其实也就那么回事" />
 <meta property="site_name" content="闲人自述 " />
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html">
-<meta property="og:title" content="萌典主题配置Waline评论 | 闲人自述" />
+<meta property="og:url" content="https://blog.hxcpl.cn/p/Daybreak-Before.html">
+<meta property="og:title" content="黎明前的潜伏 | 闲人自述" />
 <meta property="og:site_name" content="闲人自述" />
-<meta property="og:description" content="关于Waline部署的一些注意事项" />
+<meta property="og:description" content="回过头来看看很多之前认为很难的事情其实也就那么回事" />
 <meta property="og:locale" content="zh-CN">
 <meta property="article:author" content="子涵 ">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -142,14 +142,14 @@
 <article class="post">
   <div class="post-info">
     <div class="post-title">
-      <h1>萌典主题配置Waline评论</h1>
+      <h1>黎明前的潜伏</h1>
     </div>
     <div class="post-meta">
       <div class="post-date">
         <i class="far fa-calendar-alt fa-fw post-meta-icon"></i>
         <span class="post-meta-label">
           发表于
-            2021-10-07 |
+            2021-10-21 |
         </span>
         
         <i class="fas fa-history fa-fw post-meta-icon"></i>
@@ -161,13 +161,13 @@
       <div class="post-meta-wordcount">
         <i class="far fa-file-word fa-fw post-meta-icon"></i>
         <span class="post-meta-label">总字数:</span>
-        <span class="word-count">853 | </span>
+        <span class="word-count">497 | </span>
         <i class="far fa-clock fa-fw post-meta-icon"></i>
         <span class="post-meta-label">阅读时长:</span>
-        <span>3分钟</span>
+        <span>1分钟</span>
         
         | <i class="far fa-eye fa-fw post-meta-icon"></i>
-        <span id="/p/MengD-Themes-Deploy-Waline-Comment.html" class="leancloud_visitors">
+        <span id="/p/Daybreak-Before.html" class="leancloud_visitors">
             <span class="post-meta-label">阅读量:</span>
             <span class="leancloud-visitors-count" id="twikoo_visitors">0</span>
         </span>
@@ -177,65 +177,19 @@
   </div>
   <div class="post-content">
     <blockquote>
-<p>众所周知</p>
-<blockquote>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>简而言之,它生成的都是静态页面，想要插入评论什么的需要借助一套完整的评论系统。</p>
-<blockquote>
-<p>而我用的主题:<a target="_blank" rel="noopener" href="https://github.com/lete114/hexo-theme-MengD">MengD-萌典</a>默认的评论系统就是Waline评论系统。</p>
+<p>写在骑行过程的一段感悟。可能是我思维太发散了，骑车的时候莫名其妙会蹦出来一些想法。</p>
 </blockquote>
-</blockquote>
-</blockquote>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://console.leancloud.app/">LeanCloud国际版</a>(数据库)</li>
-<li><a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a>(服务端)</li>
-<li>打开萌典主题配置文件<b>_config.MengD.yml</b>搜索Waline，大概在120行左右</b> </li>
-</ul>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><blockquote>
-<p>其实<a target="_blank" rel="noopener" href="https://waline.js.org/">Waline使用文档</a>是非常详细的跟着走就行了。<br>好了Waline评论系统配置教程<b>到此结束!</b>。</p>
-</blockquote>
-<p>哈哈说的其实也是实话，跟着文档走绝对没问题，我仅提几个注意事项:</p>
-<ul>
-<li><p><b>直接</b>点击开发文档中的<a target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example">Deploy</a>跳转至vercel进行部署就行了。<b>不要</b>去他的github上Fork了再添加项目，因为在官方提供的跳转链接直接给你引导到了部署界面，Vercel会帮你生成一个关于Waline的服务端文件到你的Github仓库。</p>
-</li>
-<li><p>在Vercel中配置环境变量时要注意文档提示</p>
-</li>
-</ul>
-<blockquote>
-<p>“点击顶部的 Settings - Environment Variables 进入环境变量配置页，并配置三个环境变量LEAN_ID, LEAN_KEY 和 LEAN_MASTER_KEY 。它们的值分别对应上一步在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。”</p>
-</blockquote>
-<p>其实文档说的有些不清不楚，如图:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/8/Vercel%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt="Vercel添加环境变量"></p>
-<blockquote>
-<p>我当时就特别懵逼，明明只有2个地方需要填，可是我有”APP ID, APP KEY, Master Key”,三个值啊！这里当时浪费了我特别多时间，我以为是Waline的文档教程已经老了。</p>
-</blockquote>
-<p>仔细去看了文档的图片和文字才理解过来，原来它需要我们添加3个环境变量。<br>eg：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NAME: LEAN_ID</span><br><span class="line">VALUE: 2SrSGxxxq5xxxxx-MdxxxxxMMI</span><br></pre></td></tr></table></figure>
-<p>剩下两个以此类推即可。<br>说到底还是我<b>肾虚眼花</b>，错过了一些字眼。</p>
-<ul>
-<li><p>配置好环境变量,需要再去部署一遍，这样环境变量才能生效</p>
-</li>
-<li><p>剩下就是需要去萌典主题设置里，把serverURL(服务端地址):改成Vercel给你生存的地址。</p>
-</li>
-</ul>
-<p>到这里就真的结束了,因为我的Vercel今天早上出了点问题，不抓取我仓库的更新，导致我一度以为是LeTe乐特的主题问题，没能与Vercel服务端连接，真心尴尬哈，浪费了好长时间。</p>
-<h3 id="Waline评论系统展示图"><a href="#Waline评论系统展示图" class="headerlink" title="Waline评论系统展示图"></a>Waline评论系统展示图</h3><details>
-<summary><b>点击我打开折叠</b></summary>
-
-<p>被单独拿出来的Waline界评论界面:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/8/waline%E8%AF%84%E8%AE%BA%E4%B8%BB%E7%95%8C%E9%9D%A2.png" alt="Waline评论界面"></p>
-<p>Waline评论管理登录界面:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/8/Waline%E8%AF%84%E8%AE%BA%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="Waline评论管理登录注册界面"></p>
-<p>Waline评论管理界面:<br><img src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/8/Waline%E8%AF%84%E8%AE%BA%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2.png" alt="Waline评论管理界面"></p>
-</details>
-
-<h4 id="评论管理-管理端"><a href="#评论管理-管理端" class="headerlink" title="评论管理 (管理端)"></a>评论管理 (管理端)</h4><ul>
-<li><p>部署完成后，请访问 <serverURL>/ui/register 进行注册。首个注册的人会被设定成管理员。</p>
-</li>
-<li><p>管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。</p>
-</li>
-<li><p>用户也通过评论框注册账号，登陆后会跳转到自己的档案页。</p>
-</li>
-</ul>
-<h5 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h5><p>其实这篇文章仅是我觉得一些需要提及的地方，我不打算用Waline评论系统，因为在我用上Waline</p>
-<p>的同时又看见了twikoo，它对头像的优化更加好，可以直接调用QQ头像，我觉得挺不错，所以还是</p>
-<p>写篇文章怀念一下Waline评论系统。</p>
+<p>国庆假期的第一天晚上吧，和朋友骑单车，打算去外面吃点饭，由于不识路，莫名的瞎转悠，开着导航也不会用，因为已经是晚上了，我们沿着一个湖骑行，这个湖很大，很大。</p>
+<p>对未知的东西我们产生了畏惧，尽管还是开着玩笑，一路往前，也许是因为人多吧，骑的有些疲劳一直看不到尽头，绕了很久，是运气吧，我们绕过了对岸，最终回到了学校附近</p>
+<p>找了点吃的。</p>
+<p>后来国庆回来的一天另一个朋友约着出去玩，我就装逼了，说带他去磁湖玩，去的时候是下午，哪天有点小风不过天气还不错，我在前面充当向导，旧路重走，我这个宅男可算知</p>
+<p>道了，这是我们学校的前面的景区湖，不过不得不说它真的挺大的。许是时间充裕，我就对朋友说，咱们去磁湖的尽头看看吧，他应了。两个人白天人少，他也是个飙车族，骑的</p>
+<p>特别快，近一个小时我们就到了磁湖的尽头，磁湖的尽头也没啥新奇的，所处的位置是老下陆。</p>
+<p>我当时就在想了，为什么，国庆哪天我们骑了两个多小时，都没有到的。</p>
+<p>现在明白了，原来是来自未知的恐惧，是一片黑暗遮住了我们的眼睛。</p>
+<p>回过头，想想其实骑个磁湖尽头，完全是小意思，这也让我想起了，以前很多认为很难的事情，现在做起来却认为特别的轻松，这是为什么呢，可能困难只是暂时的吧，</p>
+<p>只要走过去了，那回头也就是那么回事。</p>
+<img alt="迎接光明" src="/img/load.gif" data-img="https://cdn.jsdelivr.net/gh/zihanla/cdn/tk/2021/10/21/迎接光明.jpeg">
 
   </div>
    
@@ -253,14 +207,14 @@
       <div class="post-copyright-type">
           <span class="post-copyright-meta">文章链接: </span>
             <span class="post-copyright-info">
-              <a href="https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html" >https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html</a>
+              <a href="https://blog.hxcpl.cn/p/Daybreak-Before.html" >https://blog.hxcpl.cn/p/Daybreak-Before.html</a>
             </span>
       </div><div class="post-copyright-notice">
           <span class="post-copyright-meta">版权声明: </span>
             <span class="post-copyright-info">本博客采用
               <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " target="_blank" >
                   CC BY-NC-SA 4.0 </a> 许可协议。没有特别申明，都是本人智慧，借鉴请注明来自
-              <a href="https://blog.hxcpl.cn/p/MengD-Themes-Deploy-Waline-Comment.html" target="_blank" >闲人自述</a>
+              <a href="https://blog.hxcpl.cn/p/Daybreak-Before.html" target="_blank" >闲人自述</a>
               ！</span>
       </div>
   </div>
@@ -274,28 +228,14 @@
 
 <div class="pagination-post">
     
-    <a href="/p/From-Build-Hexo-Blog-Start.html">
-      <div class="prev-title"><i class="fas fa-chevron-left"></i>从搭建Hexo博客开始</div>
-      <div class="prev-desc">
-简单的回忆一下Hexo的部署过程和一些常用的指令
-
-需要用到的工具
-Git内容管理工具
-
-Node.jsJavaScript 运行时环境
-
-Hexo静态博客框架
-
-Github代码托管平台
-
-...</div>
-    </a>
     
-    
-    <a href="/p/Hello-World.html">
-      <div class="next-title">Hello World<i class="fas fa-chevron-right"></i></div>
-      <div class="next-desc">Hello World！你好世界！开篇献出这是我在Hexo上的第一篇。
-换博客程序的原因本来是用着Typecho来着，但是因为明年3月轻量云要过期了，我也迫切的需要服务器做udp转发，结合后期的...</div>
+    <a href="/p/The-Cycling-Reward.html">
+      <div class="next-title">骑行的收获<i class="fas fa-chevron-right"></i></div>
+      <div class="next-desc">
+今天因为要去激活一下网上申请的信用卡，银行地方有点远，于是就骑了单车，这是我来黄石第三次骑单车，感觉特别爽。
+
+说说现状没有方向，走到哪儿是哪儿，很杂很乱，有些糟糕，但是也有慢慢改变。
+骑小单...</div>
     </a>
     
 </div>
@@ -334,19 +274,6 @@ LoadTwikoo()
  
  
 
-  <div id="toc">
-    <div class="toc-title">
-      <div>
-        目录
-          <span class="num">0%</span>
-      </div>
-      <progress class="progress" value="0" max="100"></progress>
-    </div>
-    <div class="toc-list">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Waline%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E5%B1%95%E7%A4%BA%E5%9B%BE"><span class="toc-text">Waline评论系统展示图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%AE%A1%E7%90%86-%E7%AE%A1%E7%90%86%E7%AB%AF"><span class="toc-text">评论管理 (管理端)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-text">结论</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
-    </div>
-  </div>
-
                 </main>
         </div>
         <section id="rightside">
@@ -356,10 +283,6 @@ LoadTwikoo()
         
          
          
-        
-            <a id="open-toc" title="目录">
-                <i class="fas fa-list-ul"></i>
-            </a>
         
          
          
